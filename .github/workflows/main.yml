@@ -2,9 +2,9 @@ name: Frontend CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
@@ -28,3 +28,7 @@ jobs:
 
       - name: Build project
         run: npm run build
+
+      - name: Deploy to Vercel
+        if: success()
+        run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_ZCxrqzklv4tV1Pjd2D7khVX2ETxR/OOdjTzvAYR
