@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   const [count, setCount] = useState(0);
 
-  return 
+  return (
     <>
       <div>
         <a href="https://vite.dev" target="_blank">
