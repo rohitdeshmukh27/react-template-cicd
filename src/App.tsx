@@ -35,6 +35,13 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <a
+        href="/Python Cheat Sheet.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <h1>Click here to open the pdf</h1>
+      </a>
     </>
   );
 }
